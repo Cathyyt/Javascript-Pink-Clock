@@ -1,3 +1,5 @@
+const audio = new Audio("./res/tick.wav");
+
 function updateTime(){
     var d, h, m, s;
     d = new Date;
@@ -15,6 +17,7 @@ function updateTime(){
     minuteHand.style.transform = 'rotate(' + m + 'deg)';
     secondHand.style.transform = 'rotate(' + s + 'deg)';
     
+    audio.play();
    
     }
 
