@@ -10,8 +10,7 @@ body {
 }
 
 .container {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 h1 {
@@ -28,25 +27,37 @@ h1 {
     border: 5px solid black;
     position: relative;
     margin: 0 auto;
+
+}
+.image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.11;
 }
 
 .clock-inside{
-    height: 10px;
-    width: 10px;
+    height: 2%;
+    width: 2%;
     background-color: black;
     border-radius: 50%;
     display: block;
     border: 2px solid black;
-    position: absolute;
-    left: 49%;
-    top: 49%;
+    position:absolute;
+    top:49%;
+    left:49%;
+    z-index:5;
+
 }
 
 .hourHand{
     position: absolute; 
-    left: 10%;
+    left: 15%;
     top: 50%;
-    width: 40%;
+    width: 35%;
     height:6px;
     background-color: hotpink;
     transform-origin: right;
@@ -55,9 +66,9 @@ h1 {
 
 .minuteHand{
     position: absolute; 
-    left: 5%;
+    left: 10%;
     top: 50%;
-    width:45%;
+    width:40%;
     height:4px;
     background-color: hotpink;
     transform-origin: right;
@@ -66,54 +77,80 @@ h1 {
 
 .secondHand{
     position: absolute; 
-    left: 10%;
+    left: 15%;
     top: 50%;
-    width:40%;
+    width:35%;
     height:2px;
     background-color: red;
     transform-origin: right;
-
-
-
 }
 
-.noon{
+
+.digit{
     color: black;
     width: 100%;
-    text-align: center;
-    font-size: 25px;
     position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-weight:900;
+    margin:0;
+}
+.one{
+    top: 9%;
+    left: 21%;
+}
+
+.two{
+    top: 25%;
+    left: 37%;
+
+}
+.three{
+    top: 45%;
+    left: 43%;
+}
+
+.four{
+    top: 65%;
+    left: 37%;
+
+}
+.five{
+    top: 81%;
+    left: 21%;
+
+
 }
 
 .six{
-    color: black;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    position: absolute;
-    bottom: 0;
+    bottom: 4%;
+}
+.seven{
+    top: 81%;
+    left: -21%;
+
+}
+.eight{
+    top: 65%;
+    left: -37%;
 
 
 }
 
-.three{
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    top: 45%;
-    left: 48%;
-    width: 100%;
-    text-align: center;
-}
 
 .nine{
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 50%;
     top: 45%; 
-    left:-48%;
-    
+    left:-43%;
+}
+
+.ten{
+    top: 25%;
+    left: -37%;
+}
+.eleven{
+    top: 9%;
+    left: -21%;
+} 
+.twelve{
+    top: 4%;
 }
