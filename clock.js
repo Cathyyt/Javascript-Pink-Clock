@@ -1,3 +1,7 @@
+const audio = new Audio("./res/tick.wav");
+let sound = false;
+document.getElementById("clock").addEventListener("click", () => {sound = !sound});
+
 function updateTime(){
     var d, h, m, s;
     d = new Date;
@@ -14,7 +18,9 @@ function updateTime(){
     hourHand.style.transform = 'rotate(' + h + 'deg)';
     minuteHand.style.transform = 'rotate(' + m + 'deg)';
     secondHand.style.transform = 'rotate(' + s + 'deg)';
-    
+    if(sound){
+        audio.play();
+    }
    
     }
 
